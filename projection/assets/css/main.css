@@ -104,7 +104,7 @@ body {
   height: 100%;
 }
 nav {
-  margin-top: 5px;
+  margin-top: 0;
 }
 .image.fit img {
   width: 100%;
@@ -2263,8 +2263,7 @@ input[type="radio"] + label:before {
   text-transform: none !important;
 }
 
-input[type="checkbox"] + label:before,
-input[type="radio"] + label:before {
+input[type="checkbox"] + label:before {
   background: rgba(144, 144, 144, 0.075);
   border-radius: 0;
   border: solid 1px #8dcca9;
@@ -2278,6 +2277,20 @@ input[type="radio"] + label:before {
   top: 0;
   width: 1.65em;
 }
+/* input[type="radio"] + label:before {
+  background: rgba(144, 144, 144, 0.075);
+  border-radius: 0;
+  border: solid 1px #8dcca9;
+  content: "";
+  display: inline-block;
+  height: 1.65em;
+  left: 0;
+  line-height: 1.58125em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 1.65em;
+} */
 
 input[type="checkbox"]:checked + label:before {
   background: #aa2c2c;
@@ -2325,6 +2338,21 @@ input[type="radio"] + label:before {
 }
 
 /* add */
+
+.toastui-editor-defaultUI-toolbar button {
+  box-shadow: none;
+}
+.toastui-editor-popup-body button {
+  box-shadow: none;
+}
+.toastui-editor-button-container button {
+  
+}
+
+.question-content p {
+  font-size: 20px;
+}
+
 #stack-editor {
   padding: 30px;
   padding-top: 0;
@@ -2351,8 +2379,13 @@ input[type="radio"] + label:before {
 }
 
 .search-container .icon {
+  color: #555;
   font-size: 30px; /* 아이콘 크기 설정 (원하는 크기로 조정 가능) */
   margin-left: 10px; /* 아이콘과 링크 사이에 간격 추가 */
+}
+
+.code-review:hover .icon {
+  color: #aa2c2c;
 }
 
 /* .search-container input[type="text"] {
@@ -2362,15 +2395,24 @@ input[type="radio"] + label:before {
 
 /* Box */
 .box-container {
-  margin: 30px;
+  margin: 80px;
+  .button.special.icon {
+    padding: 0px 10px 0px 10px;
+  }
 }
 
 .box {
+  display: block;
+  text-decoration: none;
   border: solid 1px #dbdbdb;
   margin-bottom: 2em;
   padding: 1.5em;
-  padding-top: 0;
-  padding-bottom: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.box:hover {
+  background-color: #d6d6d6;
 }
 
 .box > :last-child,
@@ -2926,6 +2968,7 @@ button:disabled,
 }
 
 #header {
+  align-content: center;
   color: #fff;
   cursor: default;
   height: 3.25em;
