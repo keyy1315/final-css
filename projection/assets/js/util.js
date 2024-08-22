@@ -489,6 +489,7 @@
 
 									break;
 
+
 								case 'checkbox':
 								case 'radio':
 									i.attr('checked', i.attr('defaultValue'));
@@ -517,6 +518,7 @@
 		return $this;
 
 	};
+
 
 	/**
 	 * Moves elements to/from the first positions of their respective parents.
