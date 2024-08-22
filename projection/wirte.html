@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generic - Projection by TEMPLATED</title>
+    <meta charset="utf-8" />
+    <meta
+            name="robots"
+            content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+
+    <link rel="stylesheet" href="../node_modules/@stackoverflow/stacks/dist/css/stacks.css" >
+    <link
+            rel="stylesheet"
+            href="../node_modules/@stackoverflow/stacks-editor/dist/styles.css"
+    />
+    <script src="//unpkg.com/@highlightjs/cdn-assets@latest/highlight.min.js"></script>
+    <script src="../node_modules/@stackoverflow/stacks/dist/js/stacks.min.js"></script>
+    <script src="../node_modules/@stackoverflow/stacks-editor/dist/app.bundle.js"></script>
+
+</head>
+<body class="subpage">
+<header id="header">
+    <div class="inner">
+        <a href="index.html" class="logo"
+        ><strong>Projection</strong> by TEMPLATED</a
+        >
+        <nav id="nav">
+                <a href ="#" >CodeReview</a>
+                <a href ="#">ProjectReview</a>
+            <a class="login-btn">
+                <button href="#" class="button special">Login</button>
+            </a>
+        </nav>
+        <a href="#navPanel" class="navPanelToggle"
+        ><span class="fa fa-bars"></span
+        ></a>
+    </div>
+</header>
+<section id="main" class="wrapper">
+    <div class="inner">
+        <header class="align-center">
+            <input type="text" id="titleInput" placeholder="제목을 입력하세요">
+        </header>
+        <div class="question-content">
+            <div id="stack-editor"></div>
+            <script>
+                new window.stacksEditor.StacksEditor(
+                    document.querySelector("#stack-editor"),
+                    "",
+                    {}
+                );
+            </script>
+            <div class="button-container">
+                <button class="button special">#java</button>
+                <button class="button special">#python</button>
+                <button class="button special">#javascript</button>
+            </div>
+            <hr class="major" />
+            <button href="#" class="button special">취소</button>
+            <button href="#" class="button special">쓰기/수정</button>
+</body>
+</html>
