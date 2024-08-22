@@ -1944,7 +1944,20 @@ hr.major {
   max-width: 75em;
   margin: 0 auto;
 }
-
+.inner_logo {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 75em;
+  margin: 0 auto;
+}
+.inner_button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 75em;
+  margin: 0 auto;
+}
 @media screen and (max-width: 1280px) {
   .inner {
     max-width: 90%;
@@ -2807,7 +2820,7 @@ button,
   text-transform: uppercase;
   white-space: nowrap;
 }
-
+button
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
@@ -3001,6 +3014,11 @@ button:disabled,
   font-size: 1em;
 }
 
+img {
+  width: 100px; /* 원하는 이미지 너비로 설정 */
+  height: auto; /* 비율을 유지하면서 높이를 자동으로 조정 */
+  margin-left: 0; /* 왼쪽 여백을 0으로 설정 */
+}
 #header .logo strong {
   color: #ffffff;
   font-weight: 600;
